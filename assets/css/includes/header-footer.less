@@ -1,0 +1,71 @@
+// "main": "../style.less"
+@red: linear-gradient(to bottom, #23165f 50%, #ff2700);
+
+header {
+  position: fixed;
+  height: 100vh;
+  width: 30%;
+  background: #111;
+
+  .who {
+    margin: 150px 50px 0 0;
+
+    img {
+      max-width: 150px;
+      height: 150px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 19px;
+
+      span {
+        font-size: 25px;
+      }
+    }
+  }
+  @media (max-width: @screen-sm-max) {
+    position: static;
+    height: auto;
+    width: auto;
+
+    .who {
+      margin: 0;
+      padding: 50px 0 0;
+      text-align: center;
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  width: 30%;
+
+  .contact {
+    .social {
+      ul {
+        li {
+          float: right;
+          display: inline-block;
+          margin: 0 10px;
+
+          &:first-child {
+            margin-right: 50px;
+          }
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @screen-sm-max) {
+    position: static;
+    height: 200px;
+    width: auto;
+    background: @red;
+  }
+}
