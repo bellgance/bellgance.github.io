@@ -1,7 +1,8 @@
 /* ===== SIZES ===== */
 /* ===== // SIZES =====*/
 body {
-  background: #383838;
+  min-height: 100vh;
+  background: linear-gradient(to top, #283048, #859398);
   color: #fff;
 }
 body .wrapper {
@@ -11,10 +12,10 @@ header {
   position: fixed;
   height: 100vh;
   width: 30%;
-  background: #111;
+  background: transparent;
 }
 header .who {
-  margin: 150px 50px 0 0;
+  margin: 120px 50px 0 0;
 }
 header .who img {
   max-width: 150px;
@@ -35,7 +36,7 @@ header .who p span {
   }
   header .who {
     margin: 0;
-    padding: 50px 0 0;
+    padding: 50px 0;
     text-align: center;
   }
 }
@@ -61,7 +62,7 @@ footer .contact .social ul li a {
     position: static;
     height: 200px;
     width: auto;
-    background: linear-gradient(to bottom, #23165f 50%, #ff2700);
+    background: transparent;
   }
 }
 img {
@@ -69,5 +70,5 @@ img {
   height: auto;
 }
 main {
-  padding: 100px 20px;
+  padding: 50px 20px;
 }
