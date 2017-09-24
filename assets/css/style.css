@@ -1,18 +1,51 @@
-/* ===== SIZES ===== */
-/* ===== // SIZES =====*/
-body {
-  min-height: 100vh;
-  background: linear-gradient(to top, #283048, #859398);
-  color: #fff;
+/* ===== WINDOW SIZES ===== */
+/* ===== // WINDOW SIZES =====*/
+/* ===== FONT SIZES =====*/
+@media (max-width: 992px) {
+  h1 {
+    font-size: 23px !important;
+  }
+  h2 {
+    font-size: 21px !important;
+  }
+  h3 {
+    font-size: 18px !important;
+  }
 }
-body .wrapper {
-  position: relative;
+@media (max-width: 768px) {
+  h1 {
+    font-size: 21px !important;
+  }
+  h2 {
+    font-size: 19px !important;
+  }
+  h3 {
+    font-size: 16px !important;
+  }
+  p {
+    font-size: 13px !important;
+  }
 }
+@media (max-width: 767px) {
+  h1 {
+    font-size: 19px !important;
+  }
+  h2 {
+    font-size: 16px !important;
+  }
+  h3 {
+    font-size: 15px !important;
+  }
+  p {
+    font-size: 14px !important;
+  }
+}
+/* ===== // FONT SIZES =====*/
+/* ===== IMPORTS =====*/
 header {
   position: fixed;
   height: 100vh;
   width: 30%;
-  background: rgba(0, 0, 0, 0.5);
 }
 header .who {
   margin: 120px 50px 0 0;
@@ -21,6 +54,12 @@ header .who img {
   max-width: 150px;
   height: 150px;
   margin-bottom: 30px;
+}
+header .who h1 {
+  font-size: 24px;
+}
+header .who h1 span {
+  font-size: 20px;
 }
 header .who p {
   font-size: 19px;
@@ -64,11 +103,62 @@ footer .contact .social ul li a {
     width: auto;
     background: transparent;
   }
+  footer .contact .social ul {
+    text-align: center;
+  }
+  footer .contact .social ul li {
+    float: none;
+  }
+  footer .contact .social ul li:first-child {
+    margin-right: 0;
+  }
 }
-img {
+body {
+  min-height: 100vh;
+  background: linear-gradient(to top, #283048, #859398);
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+}
+body .wrapper {
+  position: relative;
+}
+body .wrapper h2 {
+  margin-bottom: 35px;
+}
+body .wrapper img {
   max-width: 100%;
   height: auto;
+}
+body .wrapper a {
+  color: #7fff00;
+}
+body .wrapper a:focus,
+body .wrapper a:hover {
+  color: #7fff00;
+}
+body .wrapper a:focus {
+  text-decoration: none;
+}
+body .wrapper a:active {
+  text-decoration: underline;
 }
 main {
   padding: 50px 20px;
 }
+main section.about ul {
+  padding: 20px;
+}
+main section.about ul li {
+  margin-bottom: 3px;
+}
+main section.portfolio .item {
+  margin-bottom: 40px;
+}
+main section.portfolio .item img {
+  margin-bottom: 15px;
+}
+main section.portfolio .item p {
+  font-size: 12px;
+}
+/* ===== // IMPORTS =====*/

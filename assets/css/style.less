@@ -1,21 +1,63 @@
 // "out": "style.css", "compress": true, "strictMath": true, "sourceMap": true
-/* ===== SIZES ===== */
+/* ===== WINDOW SIZES ===== */
 @screen-xs-max: 767px;
 @screen-sm-min: 768px;
 @screen-sm-max: 991px;
 @screen-md-min: 992px;
 @screen-md-max: 1199px;
 @screen-lg-min: 1200px;
-/* ===== // SIZES =====*/
-body {
-  min-height: 100vh;
-  background: linear-gradient(to top, #283048, #859398);
-  color: #fff;
+/* ===== // WINDOW SIZES =====*/
+/* ===== FONT SIZES =====*/
+@media (max-width: @screen-md-min) {
+  h1 {
+    font-size: 23px !important;
+  }
 
-  .wrapper {
-    position: relative;
+  h2 {
+    font-size: 21px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
   }
 }
+@media (max-width: @screen-sm-min) {
+  h1 {
+    font-size: 21px !important;
+  }
+
+  h2 {
+    font-size: 19px !important;
+  }
+
+  h3 {
+    font-size: 16px !important;
+  }
+
+  p {
+    font-size: 13px !important;
+  }
+}
+@media (max-width: @screen-xs-max) {
+  h1 {
+    font-size: 19px !important;
+  }
+
+  h2 {
+    font-size: 16px !important;
+  }
+
+  h3 {
+    font-size: 15px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+}
+/* ===== // FONT SIZES =====*/
+/* ===== IMPORTS =====*/
 @import "includes/header-footer.less";
 @import "includes/all.less";
 @import "includes/main.less";
+/* ===== // IMPORTS =====*/
