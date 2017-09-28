@@ -46,10 +46,8 @@ header {
   position: fixed;
   height: 100vh;
   width: 30%;
-  background: url("/assets/img/forest2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
+  border-right: 2px solid #020302;
+  font-family: western;
 }
 header .who {
   margin: 120px 50px 0 0;
@@ -57,26 +55,34 @@ header .who {
 header .who img {
   max-width: 150px;
   height: 150px;
-  margin-bottom: 30px;
+  margin: 10px 0;
 }
 header .who h1 {
-  font-size: 24px;
+  margin: 0;
+  font-size: 35px;
+  font-weight: 100;
 }
-header .who h1 span {
-  font-size: 20px;
+header .who h2 {
+  margin: 0;
+}
+header .who h2.reward {
+  margin-top: 10px;
+}
+header .who h2.reward .blur {
+  filter: blur(3px);
 }
 header .who p {
-  margin-top: 30px;
-  font-size: 15px;
-}
-header .who p span {
-  font-size: 25px;
+  margin: 0;
+  line-height: 0.9;
+  font-size: 27px;
 }
 @media (max-width: 991px) {
   header {
     position: static;
     height: auto;
     width: auto;
+    border-right: 0;
+    border-bottom: 2px solid #020302;
   }
   header .who {
     margin: 0;
@@ -118,44 +124,48 @@ footer .contact .social ul li a {
     margin-right: 0;
   }
 }
+@font-face {
+  src: url("/assets/fonts/WesternBangBang.otf");
+  font-family: western;
+}
+@font-face {
+  src: url("/assets/fonts/SerialPublicationDEMO.ttf");
+  font-family: serial;
+}
 body {
   min-height: 100vh;
-  background: #000;
-  font-size: 15px;
+  background: url("/assets/img/paper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 22px;
   line-height: 1.5;
-  color: #fff;
+  color: #020302;
 }
 body .wrapper {
   position: relative;
 }
-body .wrapper h2 {
-  margin-bottom: 35px;
+body .wrapper main h2 {
+  margin-bottom: 25px;
 }
 body .wrapper img {
   max-width: 100%;
   height: auto;
 }
 body .wrapper a {
-  color: #0f0;
-}
-body .wrapper a:focus,
-body .wrapper a:hover {
-  color: #0f0;
-}
-body .wrapper a:focus {
-  text-decoration: none;
-}
-body .wrapper a:active {
   text-decoration: underline;
+  font-style: italic;
+  color: inherit;
 }
 main {
   padding: 50px 20px;
+  letter-spacing: 1px;
+  font-family: western;
 }
 main section.about ul {
-  padding: 20px;
+  margin-bottom: 50px;
 }
 main section.about ul li {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 main section.portfolio .item {
   margin-bottom: 40px;

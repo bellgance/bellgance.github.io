@@ -1,19 +1,30 @@
 // "main": "../style.less"
+@font-face {
+  src: url("/assets/fonts/WesternBangBang.otf");
+  font-family: western;
+}
+@font-face {
+  src: url("/assets/fonts/SerialPublicationDEMO.ttf");
+  font-family: serial;
+}
 
 body {
   min-height: 100vh;
-  // background: linear-gradient(to right, #030401, rgba(50, 75, 0, 1));
-  // background: linear-gradient(to right, #00f 90%, #f00);
-  background: #000;
-  font-size: 15px;
+  background: url("/assets/img/paper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  // font-family: serial, sans-serif;
+  font-size: 22px;
   line-height: 1.5;
-  color: #fff;
+  color: #020302;
 
   .wrapper {
     position: relative;
 
-    h2 {
-      margin-bottom: 35px;
+    main {
+      h2 {
+        margin-bottom: 25px;
+      }
     }
 
     img {
@@ -22,20 +33,9 @@ body {
     }
 
     a {
-      color: #0f0;
-
-      &:focus,
-      &:hover {
-        color: #0f0;
-      }
-
-      &:focus {
-        text-decoration: none;
-      }
-
-      &:active {
-        text-decoration: underline;
-      }
+      text-decoration: underline;
+      font-style: italic;
+      color: inherit;
     }
   }
 }
