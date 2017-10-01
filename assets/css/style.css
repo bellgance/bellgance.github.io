@@ -91,33 +91,20 @@ footer {
   bottom: 30px;
   left: 0;
   width: 30%;
+  font-family: western;
 }
-footer .contact .social ul li {
-  float: right;
-  display: inline-block;
-  margin: 0 10px;
-}
-footer .contact .social ul li:first-child {
-  margin-right: 50px;
-}
-footer .contact .social ul li a {
-  color: #fff;
+footer .share .ya-share2 {
+  display: inline-block !important;
+  filter: grayscale(1) !important;
 }
 @media (max-width: 991px) {
   footer {
     position: static;
-    height: 200px;
+    height: 100px;
     width: auto;
-    background: transparent;
   }
-  footer .contact .social ul {
-    text-align: center;
-  }
-  footer .contact .social ul li {
-    float: none;
-  }
-  footer .contact .social ul li:first-child {
-    margin-right: 0;
+  footer .share .ya-share2 ul li {
+    margin: 0 15px;
   }
 }
 @font-face {

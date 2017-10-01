@@ -60,43 +60,24 @@ footer {
   bottom: 30px;
   left: 0;
   width: 30%;
+  font-family: western;
 
-  .contact {
-    .social {
-      ul {
-        li {
-          float: right;
-          display: inline-block;
-          margin: 0 10px;
-
-          &:first-child {
-            margin-right: 50px;
-          }
-
-          a {
-            color: #fff;
-          }
-        }
-      }
+  .share {
+    .ya-share2 {
+      display: inline-block !important;
+      filter: grayscale(1) !important;
     }
   }
   @media (max-width: @screen-sm-max) {
     position: static;
-    height: 200px;
+    height: 100px;
     width: auto;
-    background: transparent;
 
-    .contact {
-      .social {
+    .share {
+      .ya-share2 {
         ul {
-          text-align: center;
-
           li {
-            float: none;
-
-            &:first-child {
-              margin-right: 0;
-            }
+            margin: 0 15px;
           }
         }
       }
