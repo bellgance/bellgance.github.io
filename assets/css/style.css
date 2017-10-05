@@ -101,6 +101,7 @@ footer .share .ya-share2 {
     position: static;
     height: 100px;
     width: auto;
+    margin-bottom: 60px;
   }
   footer .share .ya-share2 ul li {
     margin: 0 15px 25px;
