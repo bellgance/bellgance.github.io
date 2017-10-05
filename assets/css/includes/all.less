@@ -10,16 +10,22 @@
 
 body {
   min-height: 100vh;
-  background: url("/assets/img/paper.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  // font-family: serial, sans-serif;
+  background: url("/assets/img/board.jpg");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
   font-size: 22px;
   line-height: 1.5;
   color: #020302;
 
   .wrapper {
     position: relative;
+    top: 100px;
+    // transform: rotate(180deg);
+    transform-origin: top;
+    background: url("/assets/img/paper.jpg");
+    background-repeat: no-repeat;
+    background-size: 97% 98%;
+    background-position: center top;
 
     main {
       h2 {
@@ -37,5 +43,17 @@ body {
       font-style: italic;
       color: inherit;
     }
+  }
+
+  &::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    display: none;
   }
 }

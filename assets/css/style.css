@@ -42,7 +42,6 @@ header {
   position: fixed;
   height: 100vh;
   width: 30%;
-  border-right: 2px solid #020302;
   font-family: western;
 }
 header .who {
@@ -88,7 +87,7 @@ header .who p {
 }
 footer {
   position: fixed;
-  bottom: 30px;
+  bottom: 70px;
   left: 0;
   width: 30%;
   font-family: western;
@@ -104,7 +103,7 @@ footer .share .ya-share2 {
     width: auto;
   }
   footer .share .ya-share2 ul li {
-    margin: 0 15px;
+    margin: 0 15px 25px;
   }
 }
 @font-face {
@@ -117,15 +116,21 @@ footer .share .ya-share2 {
 }
 body {
   min-height: 100vh;
-  background: url("/assets/img/paper.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("/assets/img/board.jpg");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
   font-size: 22px;
   line-height: 1.5;
   color: #020302;
 }
 body .wrapper {
   position: relative;
+  top: 100px;
+  transform-origin: top;
+  background: url("/assets/img/paper.jpg");
+  background-repeat: no-repeat;
+  background-size: 97% 98%;
+  background-position: center top;
 }
 body .wrapper main h2 {
   margin-bottom: 15px;
@@ -138,6 +143,15 @@ body .wrapper a {
   text-decoration: underline;
   font-style: italic;
   color: inherit;
+}
+body::-webkit-scrollbar-track {
+  display: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body::-webkit-scrollbar-thumb {
+  display: none;
 }
 main {
   padding: 50px 20px;
