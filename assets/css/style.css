@@ -45,7 +45,7 @@ header {
   font-family: western;
 }
 header .who {
-  margin: 120px 50px 0 0;
+  margin-top: 80px;
 }
 header .who img {
   max-width: 150px;
@@ -154,6 +154,11 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   display: none;
 }
+@media (max-width: 767px) {
+  body .wrapper {
+    top: 30px;
+  }
+}
 main {
   padding: 50px 20px;
   letter-spacing: 1px;
@@ -162,8 +167,8 @@ main {
 main section {
   margin-bottom: 50px;
 }
-main section.about ul li {
-  margin-bottom: 5px;
+main section ul li {
+  margin-bottom: 7px;
 }
 main section.portfolio .item {
   margin-bottom: 40px;
