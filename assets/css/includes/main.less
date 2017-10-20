@@ -2,6 +2,7 @@
 
 main {
   padding: 50px 20px;
+  background-color: #000030;
   letter-spacing: 1px;
   font-family: western;
 
@@ -14,16 +15,34 @@ main {
       }
     }
 
-    &.portfolio {
-      .item {
-        margin-bottom: 40px;
+    &.crimes {
+      .work {
+        position: relative;
+        margin-bottom: 30px;
+        padding-bottom: 100%;
+        border: 3px solid #fff;
+        border-radius: 15px;
 
-        img {
-          margin-bottom: 15px;
+        a {
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
         }
 
-        p {
-          font-size: 12px;
+        span {
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform: rotate(-45deg);
         }
       }
     }

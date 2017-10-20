@@ -4,7 +4,8 @@ header {
   position: fixed;
   height: 100vh;
   width: 30%;
-  font-family: western;
+  border-right: 7px solid #fff;
+  font-family: northface;
 
   .who {
     margin-top: 80px;
@@ -28,7 +29,7 @@ header {
         margin-top: 10px;
 
         .blur {
-          filter: blur(3px);
+          filter: blur(5px);
         }
       }
     }
@@ -44,43 +45,12 @@ header {
     height: auto;
     width: auto;
     border-right: 0;
-    border-bottom: 2px solid #020302;
+    border-bottom: 5px solid #fff;
 
     .who {
       margin: 0;
       padding: 50px 0;
       text-align: center;
-    }
-  }
-}
-
-footer {
-  position: fixed;
-  bottom: 70px;
-  left: 0;
-  width: 30%;
-  font-family: western;
-
-  .share {
-    .ya-share2 {
-      display: inline-block !important;
-      filter: grayscale(1) !important;
-    }
-  }
-  @media (max-width: @screen-sm-max) {
-    position: static;
-    height: 100px;
-    width: auto;
-    margin-bottom: 60px;
-
-    .share {
-      .ya-share2 {
-        ul {
-          li {
-            margin: 0 15px 25px;
-          }
-        }
-      }
     }
   }
 }

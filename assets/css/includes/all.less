@@ -3,29 +3,23 @@
   src: url("/assets/fonts/WesternBangBang.otf");
   font-family: western;
 }
+@font-face {
+  src: url("/assets/fonts/NorthFace.ttf");
+  font-family: northface;
+}
 
 body {
   min-height: 100vh;
-  background: url("/assets/img/board.jpg");
-  background-repeat: repeat-y;
-  background-size: 100% auto;
+  background: #000030;
   font-size: 22px;
   line-height: 1.5;
-  color: #020302;
+  color: #fff;
 
   .wrapper {
-    position: relative;
-    top: 100px;
-    // transform: rotate(180deg);
-    transform-origin: top;
-    background: url("/assets/img/paper.jpg");
-    background-repeat: no-repeat;
-    background-size: 97% 98%;
-    background-position: center top;
-
     main {
       h2 {
         margin-bottom: 15px;
+        color: #ff8c00;
       }
     }
 
@@ -38,6 +32,10 @@ body {
       text-decoration: underline;
       font-style: italic;
       color: inherit;
+    }
+
+    hr {
+      border-color: #ff8c00;
     }
   }
 

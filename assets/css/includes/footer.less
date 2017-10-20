@@ -1,0 +1,31 @@
+// "main": "../style.less"
+
+footer {
+  position: fixed;
+  bottom: 70px;
+  left: 15px;
+  width: 30%;
+  font-family: northface;
+
+  .share {
+    .ya-share2 {
+      display: inline-block !important;
+    }
+  }
+  @media (max-width: @screen-sm-max) {
+    position: static;
+    height: 100px;
+    width: auto;
+    margin-bottom: 60px;
+
+    .share {
+      .ya-share2 {
+        ul {
+          li {
+            margin: 0 15px 25px;
+          }
+        }
+      }
+    }
+  }
+}
