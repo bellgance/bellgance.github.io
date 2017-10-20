@@ -166,6 +166,7 @@ main section.crimes .work {
   padding-bottom: 100%;
   border: 3px solid #fff;
   border-radius: 15px;
+  transition: 0.2s;
 }
 main section.crimes .work a {
   position: absolute;
@@ -186,5 +187,12 @@ main section.crimes .work span {
   justify-content: center;
   align-items: center;
   transform: rotate(-45deg);
+  transition: 0.2s;
+}
+main section.crimes .work:hover {
+  border-color: #ff8c00;
+}
+main section.crimes .work:hover span {
+  color: #ff8c00;
 }
 /* ===== // IMPORTS =====*/
