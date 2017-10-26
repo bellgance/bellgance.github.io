@@ -1,0 +1,168 @@
+/* ===== WINDOW SIZES ===== */
+/* ===== // WINDOW SIZES =====*/
+/* ===== SPACERS =====*/
+.spacer,
+.spacer25,
+.spacer50,
+.spacer100 {
+  display: block;
+  height: 100px;
+  width: 100%;
+}
+.spacer25 {
+  height: 25px;
+}
+.spacer50 {
+  height: 50px;
+}
+.spacer100 {
+  height: 100px;
+}
+/* ===== // SPACERS =====*/
+/* ===== FONT SIZES =====*/
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 767px) {
+}
+/* ===== // FONT SIZES =====*/
+/* ===== COLORS =====*/
+/* ===== // COLORS =====*/
+/* ===== IMPORTS =====*/
+header .navbar {
+  margin-top: 5px;
+  margin-bottom: 0;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+header .navbar > div {
+  display: flex;
+  justify-content: center;
+}
+header .navbar .navbar-nav {
+  margin: 0;
+}
+header .navbar .navbar-nav li {
+  display: inline-block;
+}
+header .navbar .navbar-nav li a {
+  padding: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+header .navbar .navbar-nav li a:hover {
+  background: none;
+  color: #ccc;
+}
+header .navbar .navbar-nav li:nth-child(2) a {
+  padding: 15px 20px;
+}
+footer {
+  padding: 40px 0 10px;
+  background-color: #2a2b37;
+}
+footer ul li {
+  margin-bottom: 10px;
+}
+footer ul li a {
+  color: #fff;
+}
+footer ul li a:hover {
+  color: #fff;
+}
+footer .created {
+  color: #fff;
+}
+footer .created a {
+  color: #fff;
+  text-decoration: underline;
+}
+@media (max-width: 767px) {
+  footer ul {
+    text-align: left !important;
+  }
+  footer ul li {
+    margin-bottom: 15px;
+  }
+}
+#index {
+  min-height: 200vh;
+}
+#index section.top .whoiam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+#index section.about .skills .progress {
+  height: 30px;
+  margin-bottom: 30px;
+  box-shadow: none;
+  border: 1px solid #292929;
+  border-radius: 0;
+  background: #fff;
+}
+#index section.about .skills .progress .progress-bar {
+  padding: 5px 15px;
+  background: #292929;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+@media (max-width: 767px) {
+  #index section.about .des p {
+    text-indent: 15px;
+  }
+}
+@font-face {
+  src: url("/fonts/");
+  font-family: ;
+}
+body {
+  background: #fff;
+  color: #292929;
+  font-family: "Open Sans", sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+h1.underline,
+h2.underline,
+h3.underline,
+h4.underline {
+  position: relative;
+}
+h1.underline::after,
+h2.underline::after,
+h3.underline::after,
+h4.underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #292929;
+}
+h1.sketch,
+h2.sketch,
+h3.sketch,
+h4.sketch {
+  color: #000;
+  filter: drop-shadow(0 0 1px #fff) invert(1);
+}
+/* ===== // IMPORTS =====*/

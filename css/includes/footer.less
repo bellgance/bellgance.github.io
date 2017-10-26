@@ -1,0 +1,38 @@
+// "main": "../style.less"
+
+footer {
+  padding: 40px 0 10px;
+  background-color: @violet;
+
+  ul {
+    li {
+      margin-bottom: 10px;
+
+      a {
+        color: @white;
+
+        &:hover {
+          color: @white;
+        }
+      }
+    }
+  }
+
+  .created {
+    color: @white;
+
+    a {
+      color: @white;
+      text-decoration: underline;
+    }
+  }
+  @media (max-width: @screen-xs-max) {
+    ul {
+      text-align: left !important;
+
+      li {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

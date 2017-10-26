@@ -1,0 +1,50 @@
+// "main": "../style.less"
+@font-face {
+  src: url("/fonts/");
+  font-family:;
+}
+
+body {
+  background: @white;
+  color: @black;
+  font-family: "Open Sans", sans-serif;
+}
+
+section {}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+
+  &.underline {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -10px;
+      display: block;
+      width: 60px;
+      height: 2px;
+      margin: 0 auto;
+      background-color: @black;
+    }
+  }
+
+  &.sketch {
+    color: #000;
+    filter: drop-shadow(0 0 1px #fff) invert(1);
+  }
+}
+// filter: drop-shadow(0 0 1px #fff) invert(1);

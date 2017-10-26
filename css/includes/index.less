@@ -1,0 +1,48 @@
+// "main": "../style.less"
+
+#index {
+  min-height: 200vh;
+
+  section {
+    &.top {
+      .whoiam {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+      }
+    }
+
+    &.about {
+      .des {
+        p {}
+      }
+
+      .skills {
+        .progress {
+          height: 30px;
+          margin-bottom: 30px;
+          box-shadow: none;
+          border: 1px solid @black;
+          border-radius: 0;
+          background: @white;
+
+          .progress-bar {
+            padding: 5px 15px;
+            background: @black;
+            text-align: left;
+            font-weight: 600;
+            letter-spacing: 1px;
+          }
+        }
+      }
+      @media (max-width: @screen-xs-max) {
+        .des {
+          p {
+            text-indent: 15px;
+          }
+        }
+      }
+    }
+  }
+}
