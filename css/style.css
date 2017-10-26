@@ -54,8 +54,15 @@ header .navbar .navbar-nav li a {
   font-size: 12px;
   font-weight: 600;
 }
+header .navbar .navbar-nav li a:focus,
 header .navbar .navbar-nav li a:hover {
   background: none;
+  color: #ccc;
+}
+header .navbar .navbar-nav li a:focus {
+  color: #fff;
+}
+header .navbar .navbar-nav li a:active {
   color: #ccc;
 }
 header .navbar .navbar-nav li:nth-child(2) a {
@@ -63,7 +70,7 @@ header .navbar .navbar-nav li:nth-child(2) a {
 }
 footer {
   padding: 40px 0 10px;
-  background-color: #2a2b37;
+  background-color: #292929;
 }
 footer ul li {
   margin-bottom: 10px;
@@ -71,6 +78,7 @@ footer ul li {
 footer ul li a {
   color: #fff;
 }
+footer ul li a:focus,
 footer ul li a:hover {
   color: #fff;
 }
@@ -92,11 +100,20 @@ footer .created a {
 #index {
   min-height: 200vh;
 }
+#index section.top {
+  background: linear-gradient(to top, #ffffff, rgba(0, 0, 0, 0.2)), linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, #fff 50%, rgba(0, 0, 0, 0.5) 100%);
+}
 #index section.top .whoiam {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+}
+#index section.top .whoiam h1 {
+  font-size: 46px;
+}
+#index section.top .whoiam h2 {
+  font-size: 40px;
 }
 #index section.about .skills .progress {
   height: 30px;
@@ -118,6 +135,31 @@ footer .created a {
     text-indent: 15px;
   }
 }
+#index section.portfolio .equal-h {
+  display: flex;
+  flex-wrap: wrap;
+}
+#index section.portfolio .equal-h .card {
+  margin-bottom: 30px;
+  border: 2px solid #292929;
+}
+#index section.portfolio .equal-h .card .top-part {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px 10px;
+}
+#index section.portfolio .equal-h .card .top-part .des ul li {
+  list-style: initial;
+  list-style-position: inside;
+}
+#index section.portfolio .equal-h .card .bottom-part {
+  padding: 7px 0;
+  background: #292929;
+}
+#index section.portfolio .equal-h .card .bottom-part a {
+  color: #fff;
+  letter-spacing: 1px;
+}
 @font-face {
   src: url("/fonts/");
   font-family: ;
@@ -127,9 +169,20 @@ body {
   color: #292929;
   font-family: "Open Sans", sans-serif;
 }
+body::selection {
+  background: #292929;
+  color: #fff;
+}
 img {
   max-width: 100%;
   height: auto;
+}
+a:focus {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: underline;
+  color: #ccc;
 }
 h1,
 h2,

@@ -8,6 +8,11 @@ body {
   background: @white;
   color: @black;
   font-family: "Open Sans", sans-serif;
+
+  &::selection {
+    background: @black;
+    color: @white;
+  }
 }
 
 section {}
@@ -17,7 +22,16 @@ img {
   height: auto;
 }
 
-a {}
+a {
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: underline;
+    color: @lightgray;
+  }
+}
 
 h1,
 h2,
