@@ -97,9 +97,6 @@ footer .created a {
     margin-bottom: 15px;
   }
 }
-#index {
-  min-height: 200vh;
-}
 #index section.top {
   background: linear-gradient(to top, #ffffff, rgba(0, 0, 0, 0.2)), linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, #fff 50%, rgba(0, 0, 0, 0.5) 100%);
 }
@@ -147,6 +144,12 @@ footer .created a {
   display: flex;
   justify-content: space-between;
   padding: 5px 15px 10px;
+}
+#index section.portfolio .equal-h .card .top-part .des {
+  width: 100%;
+}
+#index section.portfolio .equal-h .card .top-part .des h4 {
+  text-align: center;
 }
 #index section.portfolio .equal-h .card .top-part .des ul li {
   list-style: initial;
