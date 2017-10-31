@@ -8,14 +8,7 @@ body {
   background: @white;
   color: @black;
   font-family: "Open Sans", sans-serif;
-
-  &::selection {
-    background: @black;
-    color: @white;
-  }
 }
-
-section {}
 
 img {
   max-width: 100%;
@@ -59,6 +52,13 @@ h4 {
   &.sketch {
     color: #000;
     filter: drop-shadow(0 0 1px #fff) invert(1);
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li, a {
+  &::selection {
+    background: @black;
+    color: @white;
   }
 }
 // filter: drop-shadow(0 0 1px #fff) invert(1);

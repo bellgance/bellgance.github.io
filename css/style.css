@@ -31,7 +31,6 @@
 /* ===== // COLORS =====*/
 /* ===== IMPORTS =====*/
 header .navbar {
-  margin-top: 5px;
   margin-bottom: 0;
   border: 0;
   background-color: rgba(0, 0, 0, 0.7);
@@ -172,10 +171,6 @@ body {
   color: #292929;
   font-family: "Open Sans", sans-serif;
 }
-body::selection {
-  background: #292929;
-  color: #fff;
-}
 img {
   max-width: 100%;
   height: auto;
@@ -220,5 +215,18 @@ h3.sketch,
 h4.sketch {
   color: #000;
   filter: drop-shadow(0 0 1px #fff) invert(1);
+}
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+p::selection,
+span::selection,
+li::selection,
+a::selection {
+  background: #292929;
+  color: #fff;
 }
 /* ===== // IMPORTS =====*/
