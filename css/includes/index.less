@@ -95,5 +95,46 @@
         }
       }
     }
+
+    &.mail {
+      form {
+        input {
+          height: 30px;
+          margin-bottom: 30px;
+          padding: 0 0 0 8px;
+          border: 1px solid @black;
+          border-radius: 0;
+          background: @white;
+          color: @black;
+
+          &:focus {
+            box-shadow: 0 0 1px @black;
+          }
+
+          &::placeholder {
+            color: @black;
+          }
+        }
+
+        button {
+          box-shadow: none;
+          outline: none;
+          border: 1px solid @black;
+          border-radius: 0;
+          background: @white;
+          color: @black;
+          transition: 0.2s;
+
+          &:hover {
+            background: @black;
+            color: @white;
+          }
+
+          &:active {
+            box-shadow: 0 0 1px @black;
+          }
+        }
+      }
+    }
   }
 }
