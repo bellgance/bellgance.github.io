@@ -17,8 +17,8 @@ $mail->Password = 'hfvfpfyjd'; // Ваш пароль от почты с кот�
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('dzharuzov@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('gomudusu@p33.org');     // Кому будет уходить письмо
+$mail->setFrom('sn3g@bk.ru'); // от кого будет уходить письмо?
+$mail->addAddress('ramazanovkamil@yandex.ru');     // Кому будет уходить письмо
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
