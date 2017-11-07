@@ -36,8 +36,12 @@ header .navbar {
   background-color: rgba(0, 0, 0, 0.7);
 }
 header .navbar > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 header .navbar .navbar-nav {
   margin: 0;
@@ -97,12 +101,20 @@ footer .created a {
   }
 }
 #index section.top {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), color-stop(50%, #fff), to(rgba(0, 0, 0, 0.5)));
   background: linear-gradient(to top, #ffffff, rgba(0, 0, 0, 0.2)), linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, #fff 50%, rgba(0, 0, 0, 0.5) 100%);
 }
 #index section.top .whoiam {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
 }
 #index section.top .whoiam h1 {
@@ -114,7 +126,8 @@ footer .created a {
 #index section.about .skills .progress {
   height: 30px;
   margin-bottom: 30px;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 1px solid #292929;
   border-radius: 0;
   background: #fff;
@@ -132,16 +145,23 @@ footer .created a {
   }
 }
 #index section.portfolio .equal-h {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 #index section.portfolio .equal-h .card {
   margin-bottom: 30px;
   border: 2px solid #292929;
 }
 #index section.portfolio .equal-h .card .top-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 5px 15px 10px;
 }
 #index section.portfolio .equal-h .card .top-part .des {
@@ -155,10 +175,12 @@ footer .created a {
   list-style-position: inside;
 }
 #index section.portfolio .equal-h .card .bottom-part {
-  padding: 7px 0;
   background: #292929;
 }
 #index section.portfolio .equal-h .card .bottom-part a {
+  display: inline-block;
+  width: 100%;
+  padding: 7px 0;
   color: #fff;
   letter-spacing: 1px;
 }
@@ -172,18 +194,30 @@ footer .created a {
   color: #292929;
 }
 #index section.mail form input:focus {
-  box-shadow: 0 0 1px #292929;
+  -webkit-box-shadow: 0 0 1px #292929;
+          box-shadow: 0 0 1px #292929;
+}
+#index section.mail form input::-webkit-input-placeholder {
+  color: #292929;
+}
+#index section.mail form input:-ms-input-placeholder {
+  color: #292929;
+}
+#index section.mail form input::-ms-input-placeholder {
+  color: #292929;
 }
 #index section.mail form input::placeholder {
   color: #292929;
 }
 #index section.mail form button {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   outline: none;
   border: 1px solid #292929;
   border-radius: 0;
   background: #fff;
   color: #292929;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 #index section.mail form button:hover {
@@ -191,7 +225,8 @@ footer .created a {
   color: #fff;
 }
 #index section.mail form button:active {
-  box-shadow: 0 0 1px #292929;
+  -webkit-box-shadow: 0 0 1px #292929;
+          box-shadow: 0 0 1px #292929;
 }
 body {
   background: #fff;
@@ -255,7 +290,21 @@ h2.sketch,
 h3.sketch,
 h4.sketch {
   color: #000;
-  filter: drop-shadow(0 0 1px #fff) invert(1);
+  -webkit-filter: drop-shadow(0 0 1px #fff) invert(1);
+          filter: drop-shadow(0 0 1px #fff) invert(1);
+}
+a::-moz-selection,
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection,
+h4::-moz-selection,
+h5::-moz-selection,
+h6::-moz-selection,
+li::-moz-selection,
+p::-moz-selection,
+span::-moz-selection {
+  background: #292929;
+  color: #fff;
 }
 a::selection,
 h1::selection,
