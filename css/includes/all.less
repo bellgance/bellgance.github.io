@@ -1,13 +1,27 @@
 // "main": "../style.less"
-@font-face {
-  src: url("/fonts/");
-  font-family:;
-}
 
 body {
   background: @white;
   color: @black;
   font-family: "Open Sans", sans-serif;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-track,
+  &::-webkit-scrollbar-track-piece {
+    border-left: 1px solid @black;
+    background: @white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: @black;
+  }
 }
 
 img {
@@ -55,7 +69,16 @@ h4 {
   }
 }
 
-h1, h2, h3, h4, h5, h6, p, span, li, a {
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p,
+span {
   &::selection {
     background: @black;
     color: @white;
