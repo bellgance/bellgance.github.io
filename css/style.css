@@ -21,10 +21,43 @@
 /* ===== // SPACERS =====*/
 /* ===== FONT SIZES =====*/
 @media (max-width: 992px) {
+  h1 {
+    font-size: 36px !important;
+  }
+  h2 {
+    font-size: 33px !important;
+  }
+  h3 {
+    font-size: 30px !important;
+  }
 }
 @media (max-width: 768px) {
+  h1 {
+    font-size: 33px !important;
+  }
+  h2 {
+    font-size: 31px !important;
+  }
+  h3 {
+    font-size: 27px !important;
+  }
+  p {
+    font-size: 16px !important;
+  }
 }
 @media (max-width: 767px) {
+  h1 {
+    font-size: 30px !important;
+  }
+  h2 {
+    font-size: 29px !important;
+  }
+  h3 {
+    font-size: 24px !important;
+  }
+  p {
+    font-size: 14px !important;
+  }
 }
 /* ===== // FONT SIZES =====*/
 /* ===== COLORS =====*/
@@ -36,12 +69,8 @@ header .navbar {
   background-color: rgba(0, 0, 0, 0.7);
 }
 header .navbar > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 header .navbar .navbar-nav {
   margin: 0;
@@ -101,20 +130,12 @@ footer .created a {
   }
 }
 #index section.top {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), color-stop(50%, #fff), to(rgba(0, 0, 0, 0.5)));
   background: linear-gradient(to top, #ffffff, rgba(0, 0, 0, 0.2)), linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, #fff 50%, rgba(0, 0, 0, 0.5) 100%);
 }
 #index section.top .whoiam {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
 }
 #index section.top .whoiam h1 {
@@ -123,21 +144,11 @@ footer .created a {
 #index section.top .whoiam h2 {
   font-size: 40px;
 }
-#index section.about .skills .progress {
-  height: 30px;
-  margin-bottom: 30px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: 1px solid #292929;
-  border-radius: 0;
-  background: #fff;
+#index section.about .skills ul {
+  margin-bottom: 0;
 }
-#index section.about .skills .progress .progress-bar {
-  padding: 5px 15px;
-  background: #292929;
-  text-align: left;
-  font-weight: 600;
-  letter-spacing: 1px;
+#index section.about .skills ul li {
+  margin-bottom: 5px;
 }
 @media (max-width: 767px) {
   #index section.about .des p {
@@ -145,23 +156,16 @@ footer .created a {
   }
 }
 #index section.portfolio .equal-h {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 #index section.portfolio .equal-h .card {
   margin-bottom: 30px;
   border: 2px solid #292929;
 }
 #index section.portfolio .equal-h .card .top-part {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 5px 15px 10px;
 }
 #index section.portfolio .equal-h .card .top-part .des {
@@ -194,30 +198,18 @@ footer .created a {
   color: #292929;
 }
 #index section.mail form input:focus {
-  -webkit-box-shadow: 0 0 1px #292929;
-          box-shadow: 0 0 1px #292929;
-}
-#index section.mail form input::-webkit-input-placeholder {
-  color: #292929;
-}
-#index section.mail form input:-ms-input-placeholder {
-  color: #292929;
-}
-#index section.mail form input::-ms-input-placeholder {
-  color: #292929;
+  box-shadow: 0 0 1px #292929;
 }
 #index section.mail form input::placeholder {
   color: #292929;
 }
 #index section.mail form button {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   outline: none;
   border: 1px solid #292929;
   border-radius: 0;
   background: #fff;
   color: #292929;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 #index section.mail form button:hover {
@@ -225,13 +217,12 @@ footer .created a {
   color: #fff;
 }
 #index section.mail form button:active {
-  -webkit-box-shadow: 0 0 1px #292929;
-          box-shadow: 0 0 1px #292929;
+  box-shadow: 0 0 1px #292929;
 }
 body {
   background: #fff;
   color: #292929;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 body::-webkit-scrollbar {
   width: 6px;
@@ -290,21 +281,7 @@ h2.sketch,
 h3.sketch,
 h4.sketch {
   color: #000;
-  -webkit-filter: drop-shadow(0 0 1px #fff) invert(1);
-          filter: drop-shadow(0 0 1px #fff) invert(1);
-}
-a::-moz-selection,
-h1::-moz-selection,
-h2::-moz-selection,
-h3::-moz-selection,
-h4::-moz-selection,
-h5::-moz-selection,
-h6::-moz-selection,
-li::-moz-selection,
-p::-moz-selection,
-span::-moz-selection {
-  background: #292929;
-  color: #fff;
+  filter: drop-shadow(0 0 1px #fff) invert(1);
 }
 a::selection,
 h1::selection,
