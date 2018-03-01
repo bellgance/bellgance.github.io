@@ -35,22 +35,22 @@
 <body id="top" class="container">
 	<nav class="container">
 		<ul>
-			<li><a href="#top">About me</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#contacts">Contacts</a></li>
+			<li><a onclick="about()">About me</a></li>
+			<li><a onclick="portfolio()">Portfolio</a></li>
+			<li><a onclick="contacts()">Contacts</a></li>
 		</ul>
 	</nav>
 
 	<main>
-		<section class="about">
+		<section id="about">
 			<h1>About me</h1>
 
-			<h2>About</h2>
+			<h2>Biography</h2>
 			<p>Hi! My name is Kamil Ramazanov. I am frontend developer.</p>
 
 			<p>I was born on March 18, 1998, in the north of Russia, in the Republic of Sakha (Yakutia). In 2016, I graduated from the secondary school there. In September of that year, I entered at the North-Eastern Federal University on the specialty "Fundamental
 				Informatics and Information Technology" in Yakutsk. In the summer of 2017, I found work in a marketing agency in the office as an HTML-coder. After 3 months, I quit. In September 2017, I was leaving the university, because I lost interest and wanted
-				to work. Then half a year was engaged in making up websites on freelancing. In February 2018, I started working in the company MyTona as a frontend developer.</p>
+				to work. Then 4 months I was engaged in making up websites on freelancing. In February 2018, I started working in the company MyTona as a frontend developer.</p>
 			<p>I like to be engaged in HTML-markup of websites, studying front-end technologies and solving algorithmic problems in the <a href="https://empireofcode.com/" target="_blank">Empire of code</a> and <a href="https://www.hackerrank.com/" target="_blank">HackerRank</a>.</p>
 
 			<div hidden>
@@ -134,7 +134,7 @@
 			</div>
 		</section>
 
-		<section class="portfolio">
+		<section id="portfolio">
 			<div class="spacer"></div>
 			<h1>Portfolio</h1>
 
@@ -180,7 +180,7 @@
 			<time>February 2018</time>
 		</section>
 
-		<section class="contacts">
+		<section id="contacts">
 			<div class="spacer"></div>
 			<h1>Contacts</h1>
 
@@ -212,6 +212,32 @@
 			<p>Created by <a href="https://github.com/bellgance" target="_blank">Bellgance</a></p>
 		</section>
 	</main>
+
+	<script type="text/javascript">
+		function about() {
+			window.scrollTo(0, 0);
+		}
+
+		function portfolio() {
+			if (Math.max(window.innerWidth|| document.documentElement.clientWidth || document.body.clientWidth) > 750) {
+				var aboutHeight = document.getElementById('about').offsetHeight + 75;
+				window.scrollTo(0, aboutHeight);
+			} else {
+				var aboutHeight = document.getElementById('about').offsetHeight + 65;
+				window.scrollTo(0, aboutHeight);
+			}
+		}
+
+		function contacts() {
+			if (Math.max(window.innerWidth|| document.documentElement.clientWidth || document.body.clientWidth) > 750) {
+				var aboutHeight = document.getElementById('about').offsetHeight + 75 + document.getElementById('portfolio').offsetHeight;
+				window.scrollTo(0, aboutHeight);
+			} else {
+				var aboutHeight = document.getElementById('about').offsetHeight + 65 + document.getElementById('portfolio').offsetHeight;
+				window.scrollTo(0, aboutHeight);
+			}
+		}
+	</script>
 
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript">
