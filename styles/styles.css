@@ -83,6 +83,10 @@ h2::after {
 	border-radius: 5px;
 }
 
+h3 {
+	margin-bottom: 0;
+}
+
 p {
 	margin: 8px 0;
 	text-align: justify;
@@ -90,6 +94,11 @@ p {
 
 p, b, li, time {
 	font-size: 18px;
+}
+
+time {
+	display: block;
+	text-align: right;
 }
 
 .spacer {
@@ -160,15 +169,6 @@ main {
 
 #about .columns ul li {
 	margin-bottom: 0.5rem;
-}
-
-#portfolio h3 {
-	margin-bottom: 0;
-}
-
-#portfolio time {
-	display: block;
-	text-align: right;
 }
 
 #portfolio p {
