@@ -10,8 +10,9 @@
 /* ===== COLORS =====*/
 
 :root {
-	--gray: #F6F6F6;
+	--white: #fff;
 	--black: #222;
+	--gray: #F6F6F6;
 	--blue: #25F;
 }
 
@@ -29,7 +30,7 @@ body::-webkit-scrollbar-button {
 
 body::-webkit-scrollbar-track, body::-webkit-scrollbar-track-piece {
 	border-left: 1px solid var(--black);
-	background: white;
+	background: var(--white);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -56,7 +57,7 @@ a:hover {
 
 a::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, b::selection, time::selection, li::selection, p::selection, span::selection {
 	background-color: var(--black);
-	color: white;
+	color: var(--white);
 }
 
 h1 {
@@ -64,7 +65,7 @@ h1 {
 	margin: 0 -15px 30px;
 	padding: 3px 20px;
 	background-color: var(--black);
-	color: white;
+	color: var(--white);
 }
 
 h2 {
@@ -139,20 +140,20 @@ nav ul li a {
 	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: 1px;
-	color: white;
+	color: var(--white);
 	font-size: 12px;
 	font-weight: 600;
 }
 
 nav ul li a:hover {
 	text-decoration: underline;
-	color: white;
+	color: var(--white);
 }
 
 main {
 	position: relative;
 	padding: 50px 40px 20px;
-	background-color: white;
+	background-color: var(--white);
 }
 
 #about h1 {
@@ -175,9 +176,21 @@ main {
 	margin: 0 0 10px;
 }
 
+.created {
+	margin: 60px -15px 0;
+	padding: 7px 0;
+	background-color: var(--black);
+	color: #fff;
+}
+
 .created p {
-	margin-bottom: 0;
+	margin: 0;
 	text-align: center;
+}
+
+.created p a {
+	color: #fff;
+	text-decoration: underline;
 }
 
 /* Larger than Desktop HD */
@@ -223,4 +236,8 @@ main {
 
 /* Larger than mobile */
 
-@media (max-width: 400px) {}
+@media (max-width: 400px) {
+	nav ul li a {
+		padding: 10px;
+	}
+}
