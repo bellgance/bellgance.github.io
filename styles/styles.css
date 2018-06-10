@@ -115,6 +115,10 @@ time {
 	height: 75px
 }
 
+.spacer100 {
+	height: 100px;
+}
+
 body {
 	background: var(--gray);
 	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .5);
